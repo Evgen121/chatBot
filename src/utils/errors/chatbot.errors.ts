@@ -1,0 +1,17 @@
+export enum ChatbotErrors {
+	CHATBOT_NOT_FOUND = 'ChatBot not found',
+	MAX_BOTS_REACHED = 'Max bots reached, please upgrade your subscription',
+	CHATBOT_SNIPPET_NOT_FOUND = 'Chatbot snippet not found',
+	ASSET_NOT_FOUND = 'Asset not found',
+	ASSET_NOT_CREATED = 'Asset not created',
+	ASSET_UPDATE_ERROR = 'Error while updating asset',
+	SNIPPET_NOT_FOUND = 'Snippet not found',
+	ASSET_NOT_DELETED = 'Error deleting chatbot',
+	MLTYPE_NOT_FOUND = 'ML_type not found',
+	MLTYPE_CONFIGURE_FAILED = 'ML_type configure failed',
+	DUBLICATE_SNIPPET = 'Snippets already exists. Skipping...',
+	EXIST_DOMAIN = 'Domain already exist',
+	SECRET_KEY_NOT_ADDED = 'Secret KEY not added',
+	OPEN_KEY_NOT_ADDED = 'OpenAi KEY not added',
+	ANSWER_NOT_CREATED = 'Answer not created',
+}

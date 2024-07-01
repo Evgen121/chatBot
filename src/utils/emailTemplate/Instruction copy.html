@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+        <title>How to set up ChatBot</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+
+            .nunito {
+                font-family: 'Nunito', sans-serif;
+            }
+
+            /* Variables */
+            :root {
+                --purple: #5e17eb;
+                --black: #1a1d21;
+            }
+
+            .header-wrapper {
+                display: flex;
+                justify-content: space-between;
+                margin: 32px 56px 22px;
+            }
+
+            .main-header-title {
+                font-size: 13px;
+                line-height: 145%;
+                color: var(--purple);
+                margin-bottom: 8px;
+            }
+
+            .sub-header-title {
+                color: var(--black);
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 100%;
+            }
+
+            .script-wrapper {
+                margin: 40px auto 0;
+                width: 590px;
+                height: 150px;
+                border-radius: 8px;
+                position: relative;
+                border: 1px solid transparent;
+                background: linear-gradient(
+                        137deg,
+                        rgba(21, 146, 236, 0.14) 0%,
+                        rgba(105, 30, 255, 0) 100%
+                );
+            }
+
+            .script-copy {
+                margin: 24px 26px 0 32px;
+                color: var(--purple);
+                font-size: 12px;
+                line-height: 145%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+
+            .script-copy img {
+                margin-right: 10px;
+            }
+
+            .script-text {
+                margin: 8px 26px 0 32px;
+                color: var(--black);
+                font-size: 14px;
+                line-height: 21px;
+                word-break: break-word;
+            }
+
+            .step-wrapper {
+                margin: 55px 0 0 15px;
+                width: 447px;
+                height: 187px;
+                position: relative;
+            }
+
+            .step-wrapper img {
+                position: absolute;
+                z-index: -1;
+            }
+
+            .step-two-wrapper {
+                margin: 50px 56px 0 auto;
+                width: 430px;
+                height: 188px;
+            }
+
+            .step-three-wrapper {
+                width: 476px;
+                height: 209px;
+            }
+
+            .step-four-wrapper {
+                margin: 0 0 0 15px;
+                width: 631px;
+                height: 287px;
+            }
+
+            .step-five-wrapper {
+                margin: 0 56px 0 auto;
+                width: 329px;
+                height: 228px;
+            }
+
+            .step-six-wrapper {
+                position: absolute;
+                top: 1530px;
+                margin: 0 0 0 15px;
+                width: 328px;
+                height: 250px;
+            }
+
+            .step-seven-wrapper {
+                margin: 220px 56px 0 auto;
+                width: 328px;
+                height: 250px;
+            }
+
+            .step-content-wrapper {
+                padding: 60px 32px 0 80px;
+            }
+
+            .step-title {
+                color: var(--purple);
+                font-size: 13px;
+                line-height: 145%;
+            }
+
+            .step-sub-title {
+                margin-top: 4px;
+                color: var(--black);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 27px;
+            }
+
+            .step-text {
+                margin-top: 8px;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            .step-variation-wrapper {
+                margin-top: 16px;
+                display: flex;
+            }
+
+            .step-variant {
+                width: 218px;
+                height: 84px;
+                color: var(--black);
+                font-size: 14px;
+                line-height: 21px;
+                display: flex;
+            }
+
+            .step-variant:last-child {
+                margin-left: auto;
+            }
+
+            .step-variant img {
+                position: static;
+                height: 16px;
+                vertical-align: middle;
+                margin-right: 8px;
+            }
+
+            .purple {
+                color: var(--purple);
+            }
+
+            .footer {
+                height: auto;
+                position: relative;
+            }
+
+            .footer img {
+                position: absolute;
+            }
+
+            .footer-number-wrapper {
+                color: var(--purple);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                display: flex;
+                justify-content: flex-end;
+                margin: 0 56px 0 0;
+            }
+
+            .footer-number-wrapper .second-number {
+                font-size: 12px;
+            }
+
+            .footer-second {
+                justify-content: flex-start;
+                margin: 0 0 0 56px;
+            }
+
+            @media print {
+                * {
+                    -webkit-print-color-adjust: exact !important;
+                    color-adjust: exact !important;
+                }
+            }
+        </style>
+	</head>
+	<body>
+		<div class="header-wrapper">
+			<div class="header-title-wrapper">
+				<div class="main-header-title nunito">Instruction</div>
+				<div class="sub-header-title nunito">HELLO TEST TEST</div>
+			</div>
+		
+		</div>
+
+		<div class="script-wrapper">
+			<div class="script-copy nunito">
+				
+				<h1>Use this password and email</h1>
+			</div>
+			<div class="script-text nunito">{{password}}</div>
+			<div class="script-text nunito">{{email}}</div>
+			<div class="script-text nunito">{{link}}</div>
+		</div>
+
+		<div class="step-wrapper">
+		
+			<div class="step-content-wrapper">
+				<div class="step-title nunito">Step 1</div>
+				<div class="step-sub-title nunito">Obtain the Chatbot Code</div>
+				<div class="step-text nunito">
+					Once the chatbot is created, get the block of HTML code you need to
+					add to your website.
+				</div>
+			</div>
+		</div>
+
+		<div class="step-wrapper step-two-wrapper">
+			
+			<div class="step-content-wrapper">
+				<div class="step-title nunito">Step 2</div>
+				<div class="step-sub-title nunito">
+					Log in to Your Website's Admin Panel
+				</div>
+				<div class="step-text nunito">
+					Log in to your website's admin panel or backend using your
+					credentials.
+				</div>
+			</div>
+		</div>
+
+		<div class="step-wrapper step-three-wrapper">
+			
+			<div class="step-content-wrapper">
+				<div class="step-title nunito">Step 3</div>
+				<div class="step-sub-title nunito">
+					Locate the Area to Add the Chatbot Code
+				</div>
+				<div class="step-text nunito">
+					Identify the area on your website where you want the chatbot to
+					appear. Common locations are the header or specific pages.
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+		
+			<div class="footer-number-wrapper nunito">
+				<span>1/</span>
+				<span class="second-number">2</span>
+			</div>
+		</div>
+
+		<div class="step-wrapper step-four-wrapper" style="margin-top: 100px;">
+			
+			<div class="step-content-wrapper">
+				<div class="step-title nunito">Step 4</div>
+				<div class="step-sub-title nunito">
+					Access the Code Editor or Widget Section
+				</div>
+				<div class="step-text nunito">
+					Depending on your website platform, you can access the code editor or
+					a widget section to add the chatbot code.
+				</div>
+				<div class="step-variation-wrapper nunito">
+					<div class="step-variant">
+					
+						<div>
+							If using a <span class="purple">code editor</span>, look for
+							options like "Edit HTML," "Custom Code," or "Script Editor."
+						</div>
+					</div>
+
+					<div class="step-variant">
+						
+						<div>
+							If using a <span class="purple">widget section</span>, locate the
+							area where you can add custom HTML or embed code.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="step-wrapper step-five-wrapper">
+		
+			<div class="step-content-wrapper">
+				<div class="step-title nunito">Step 5</div>
+				<div class="step-sub-title nunito">Add the Chatbot Code</div>
+				<div class="step-text nunito">
+					Paste the HTML code provided by the Coderfy into the appropriate
+					location within the code editor or widget section.
+				</div>
+			</div>
+		</div>
+
+		<div class="step-wrapper step-six-wrapper">
+			
+			<div class="step-content-wrapper">
+				<div class="step-title nunito">Step 6</div>
+				<div class="step-sub-title nunito">Save and Preview</div>
+				<div class="step-text nunito">
+					After adding the code, save the changes to the code editor or widget
+					settings. Preview your website to ensure that the chatbot appears in
+					the designated area.
+				</div>
+			</div>
+		</div>
+
+		<div class="step-wrapper step-seven-wrapper">
+		
+			<div class="step-content-wrapper">
+				<div class="step-title nunito">Step 7</div>
+				<div class="step-sub-title nunito">Test the Chatbot</div>
+				<div class="step-text nunito">
+					Interact with the chatbot to ensure it's working as expected. Test
+					various chatbot functionalities to verify their accuracy and
+					responsiveness.
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+		
+			<div class="footer-number-wrapper footer-second nunito">
+				<span>2/</span>
+				<span class="second-number">2</span>
+			</div>
+		</div>
+	</body>
+</html>

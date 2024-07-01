@@ -1,0 +1,17 @@
+export enum EmailTemplate {
+	TwoDaysLeft = 'TwoDaysLeft',
+	Blocked = 'Blocked',
+	Hello_EN = 'Hello_EN',
+	Hello_UA = 'Hello_UA',
+	Day_7_EN = 'Day_7_EN',
+	Day_7_UA = 'Day_7_UA',
+	Day_3_EN = 'Day_3_EN',
+	Day_3_UA = 'Day_3_UA',
+	Removed = 'Removed',
+	NewChatBot = 'NewChatbot',
+	Subscribe = 'Subscribe',
+	Instruction = 'Instruction',
+	NewFeedback = 'NewFeedback',
+	PasswordReset = 'PasswordReset',
+	EmailConfirmCode = 'EmailConfirmCode',
+}

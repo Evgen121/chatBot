@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  # postgresql:
+  #   image: postgres
+  #   container_name: user
+  #   ports:
+  #     - '5432:5432'
+  #   environment:
+  #     - POSTGRES_HOST=localhost
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=root
+  #     - POSTGRES_DATABASE=coderfy
+  #   command: postgres
+  #   restart: always
+
+  # redis:
+  #   image: redis:alpine3.14
+  #   container_name: redis-user
+  #   ports:
+  #     - '6379-6379'
+
+  mongo:
+    image: mongo
+    container_name: mongodb-user
+    restart: always
+    environment:
+      # dont forget to change password and username in .env file in MONGO_CONNECTION_STRING
+      MONGO_INITDB_ROOT_USERNAME: user
+      MONGO_INITDB_ROOT_PASSWORD: user
+    volumes:
+      - ./data:/data/db
+    ports:
+      - '27017:27017'
